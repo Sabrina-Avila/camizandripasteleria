@@ -2,9 +2,10 @@ $flex:flex;
 $letraNavegador:'Libre Baskerville',
 serif;
 
+
 .header--sticky {
+    height: 0vh;
     background-color: transparent;
-    margin-bottom: 5px;
     position: sticky;
     top: 0;
     z-index: 9999;
@@ -19,7 +20,8 @@ serif;
                 list-style: none;
                 font-family: $letraNavegador;
                 font-size: 15px;
-                color: black;
+                color: white;
+                text-shadow: -1.5px 2px 0 #0a0e27;
                 margin-right: 15px;
 
 
@@ -28,7 +30,7 @@ serif;
                 }
 
                 .header__nav__ul__li__a--link {
-                    color: black;
+                    color: white;
                     padding: 5px;
                     border-radius: 15px;
 
@@ -36,7 +38,7 @@ serif;
                     &:hover {
                         text-decoration: black;
                         transition: opacity .5s;
-                        background: rgb(253, 211, 218);
+                        background: white;
                     }
                 }
             }

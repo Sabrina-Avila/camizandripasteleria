@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Merriweather:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Benne&display=swap');
 $font-family: (titulo: 'Dancing Script',
     subtitulo: 'Libre Baskerville',
     texto: 'Tahoma'
@@ -12,7 +15,7 @@ $value in $font-family {
         font-family: $value;
 
         @if $key==titulo {
-            font-size: 30px;
+            font-size: 50px;
         }
 
         @if $key==subtitulo {
@@ -41,20 +44,68 @@ $value in $font-family {
 
 .titulo {
     @extend .titulo-base;
-    @include font-styles(false, red, 800);
+    @include font-styles(false, black, 800);
 }
 
 .subtitulo {
     @extend .subtitulo-base;
-    @include font-styles(false, green, 600);
+    @include font-styles(false, black);
 }
 
 .texto {
     @extend .texto-base;
-    @include font-styles(false, blue, false);
+    @include font-styles(false, black, false);
 }
 
 .texto-card {
     @extend .texto-base;
-    @include font-styles(17px, violet, false);
+    @include font-styles(12px, black, false);
+}
+
+/* texto Conoceme*/
+.contenedor {
+    margin: 2em 0;
+    line-height: 1.2;
+    text-align: justify;
+}
+
+@media (min-width: 544px) {
+    p {
+        font-size: 1rem;
+        font-family: Tahoma;
+    }
+}
+
+@media (min-width: 768px) {
+    p {
+        font-size: 1.5rem;
+        font-family: Tahoma;
+    }
+}
+
+@media (min-width: 992px) {
+    p {
+        font-size: 2rem;
+        font-family: 'Crimson Text', serif;
+    }
+}
+
+@media (min-width: 1200px) {
+    p {
+        font-size: 2.5rem;
+        font-family: 'Crimson Text', serif;
+    }
+}
+
+
+
+.title_index {
+    white-space: pre-line;
+    position: absolute;
+    font-weight: 700;
+    color: white;
+    left: 0;
+    right: 0;
+    top: 50%;
+    z-index: 1;
 }
