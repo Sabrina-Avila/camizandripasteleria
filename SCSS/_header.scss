@@ -11,15 +11,21 @@ serif;
     z-index: 9999;
 
     .header__nav {
+        .navbar-toggler {
+            background-color: #f4d6b9;
+            border-color: #0c0c0d;
+        }
+
         .header__nav__ul--justify {
             display: $flex;
             justify-content: space-evenly;
+            line-height: 30px;
 
             .header__nav__ul__li--style {
                 display: block;
                 list-style: none;
                 font-family: $letraNavegador;
-                font-size: 15px;
+                font-size: 20px;
                 color: white;
                 text-shadow: -1.5px 2px 0 #0a0e27;
                 margin-right: 15px;
@@ -36,9 +42,9 @@ serif;
 
 
                     &:hover {
-                        text-decoration: black;
+                        text-decoration: rgb(214, 163, 54);
                         transition: opacity .5s;
-                        background: white;
+                        background: #0c0c0d81;
                     }
                 }
             }

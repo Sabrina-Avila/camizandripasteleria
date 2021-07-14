@@ -105,7 +105,7 @@ body {
     align-items: center;
     margin-left: 10px;
 
-    /*  Remove overflow to see how it works　:) */
+
     overflow: hidden;
 }
 
@@ -263,4 +263,16 @@ body {
     100% {
         transform: translateX(.125em);
     }
+}
+
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+    display: block !important;
+}
+
+.carousel-item>img {
+    max-height: 500px;
+    max-width: 500px;
+    margin: auto;
 }

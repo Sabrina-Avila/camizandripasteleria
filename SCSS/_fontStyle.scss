@@ -66,13 +66,19 @@ $value in $font-family {
 .contenedor {
     margin: 2em 0;
     line-height: 1.2;
-    text-align: justify;
+    text-align: center;
 }
 
 @media (min-width: 544px) {
     p {
         font-size: 1rem;
         font-family: Tahoma;
+    }
+
+    .quien_soy {
+        font-family: texto;
+        font-size: 11px;
+        text-align: right;
     }
 }
 
@@ -81,6 +87,13 @@ $value in $font-family {
         font-size: 1.5rem;
         font-family: Tahoma;
     }
+
+    .quien_soy {
+        font-family: texto;
+        font-size: 30px;
+        line-height: 40px;
+        text-align: center;
+    }
 }
 
 @media (min-width: 992px) {
@@ -88,12 +101,26 @@ $value in $font-family {
         font-size: 2rem;
         font-family: 'Crimson Text', serif;
     }
+
+    .quien_soy {
+        font-family: texto;
+        font-size: 30px;
+        line-height: 40px;
+        text-align: center;
+    }
 }
 
 @media (min-width: 1200px) {
     p {
         font-size: 2.5rem;
         font-family: 'Crimson Text', serif;
+    }
+
+    .quien_soy {
+        font-family: texto;
+        font-size: 30px;
+        line-height: 40px;
+        text-align: center;
     }
 }
 
